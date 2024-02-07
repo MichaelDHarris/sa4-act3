@@ -8,5 +8,6 @@ while guess != 'q' and guess != str(number):
         print(f"The number was {number}.")
     elif guess == str(number):
         print("Congratulations! You guessed the right number.")
-    else:
-        print(f"Sorry! The number was {number}! Try again.")
+    elif int(guess) > number:
+        print("Sorry! That wasn't correct, try going lower!")
+    else: print("Sorry! That wasn't correct, try going higher!")
